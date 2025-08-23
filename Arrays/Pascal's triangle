@@ -1,0 +1,19 @@
+class Solution {
+public:    
+// Given an integer numRows, generate the first numRows of Pascal's Triangle.
+    vector<vector<int>> generate(int numRows) {
+        vector<vector<int>> result ;
+        for ( int rowIndex = 0 ; rowIndex < numRows ; rowIndex++)
+        {
+            vector <int> row ;
+            long long ans = 1 ;
+
+            for ( int col = 0 ; col <= rowIndex ; col++)
+            {row.push_back(ans);
+                ans = ans * ( rowIndex - col ) / ( col + 1);
+            }
+            result.push_back(row);
+        }
+        return result ;
+    }
+};
