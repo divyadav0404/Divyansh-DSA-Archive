@@ -1,6 +1,6 @@
 class Solution {
 public:    
-// Given an integer numRows, generate the first numRows of Pascal's Triangle.
+// Generate full pascal's triangle.
     vector<vector<int>> generate(int numRows) {
         vector<vector<int>> result ;
         for ( int rowIndex = 0 ; rowIndex < numRows ; rowIndex++)
