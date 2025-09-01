@@ -1,0 +1,18 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */ . //Question might look tough at firt but is quite easy as we just have to Copy the value of the next node into the given node.
+//Change the next pointer of the current node to point to the next of next node.
+//This effectively removes the next node and keeps the order intact.
+class Solution {
+public: //TC O(1) SC O(1)
+    void deleteNode(ListNode* node) {
+        node-> val = node-> next -> val ;
+        node-> next = node-> next-> next ;
+
+    }
+};
