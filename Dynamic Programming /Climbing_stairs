@@ -16,3 +16,4 @@ public:
         return dp[n];
     }
 };
+//TC is cut down to O(N) and SC is O(N)
