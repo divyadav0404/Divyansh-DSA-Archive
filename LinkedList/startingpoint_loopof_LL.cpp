@@ -2,15 +2,15 @@ class Solution { //TC , SC BOTH EQUAL TO O(N) BRUTE Approach used hash map here 
 public:
     ListNode *detectCycle(ListNode *head) {
                   std::unordered_set<ListNode*> visited ;
-          ListNode* current = head ;
-          while ( current != nullptr)
+          ListNode* curr = head ;
+          while ( curr != nullptr)
           {
-            if ( visited.find(current) != visited.end())
+            if ( visited.find(curr) != visited.end())
             {
-                return current ;
+                return curr ;
             }
-            visited.insert(current);
-            current = current-> next ;
+            visited.insert(curr);
+            curr = curr-> next ;
           }
           return nullptr ;
     }
