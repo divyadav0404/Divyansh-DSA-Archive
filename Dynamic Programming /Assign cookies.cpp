@@ -1,5 +1,5 @@
 class Solution {
-public:
+public: //tc will be consisting of sorting tc and while loop tc
     int findContentChildren(vector<int>& g, vector<int>& s) {
         sort(g.begin() , g.end());
         sort(s.begin() , s.end());
