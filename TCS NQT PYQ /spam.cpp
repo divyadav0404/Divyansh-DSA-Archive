@@ -12,6 +12,6 @@ for ( int i = 0 ; i < s.length()-2 ; i ++)
         return 0;
     }
 }
-cout << "not a spam" << endl;
+cout << "not a spam" << endl; //hey
 
 }
