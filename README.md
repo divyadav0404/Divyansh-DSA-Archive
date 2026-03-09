@@ -1,1 +1,1 @@
-List of all the problems related to DSA and my approaches included too..!!!
+Compiled a collection of Data Structures and Algorithms (DSA) problems along with detailed explanations of my approaches and solutions.
